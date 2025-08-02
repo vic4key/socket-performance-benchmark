@@ -23,7 +23,7 @@ python benchmark_runner.py --compare --iterations 1000
 
 To test in real-world environment with 2 different machines:
 
-#### ⬆️ Server Side (e.g., machine 192.168.1.100):
+#### ⬆️ Server Side (E.g., 192.168.1.100):
 ```bash
 python benchmark_remote_server.py
 ```
@@ -33,7 +33,7 @@ python benchmark_remote_server.py
 python benchmark_runner.py --compare --iterations 1000 --host 192.168.1.100
 ```
 
-## 📖 Additional Parameters (optional)
+## 📖 Parameters (Optional)
 <details>
 <summary>Click here to view more ...</summary>
 
@@ -83,8 +83,8 @@ iperf3 -c 192.168.1.5 -p 8889 -u -l 1024 -f M
 | UDP      | 1028.80        | 1.90              | 1.029         | 0.305         | 3.005         |
 
 **Performance Analysis:**
-- **⚡ TCP is 31.6% faster than UDP**
-- **🚀 TCP has 46.2% higher throughput than UDP**
+- **🚀 TCP is 31.6% faster than UDP**
+- **⚡ TCP has 46.2% higher throughput than UDP**
 
 ### 🌐 Remote Benchmark Results (via LAN)
 
@@ -105,14 +105,14 @@ iperf3 -c 192.168.1.5 -p 8889 -u -l 1024 -f M
 - **Latency Impact:** TCP degraded 11x, UDP only 4x when going remote
 
 **🔧 When to Choose TCP:**
-- ✅ **Local/LAN applications:** File transfers, databases, web servers
+- ✅ **Network applications:** File transfers, databases, web servers
 - ✅ **Reliability-critical:** Banking, e-commerce, data integrity matters
 - ✅ **High-throughput local:** Microservices on same machine/rack
 - ✅ **Guaranteed delivery:** Email, file sync, backup systems
 - ❌ **Avoid for:** Real-time gaming, video streaming over remote (LAN, Internet, etc)
 
 **⚡ When to Choose UDP:**
-- ✅ **Remote applications:** Gaming, live streaming, VoIP
+- ✅ **Network applications:** Gaming, live streaming, VoIP
 - ✅ **Real-time systems:** Chat, notifications, live updates
 - ✅ **High-frequency trading:** Low latency critical
 - ✅ **IoT/Sensor networks:** Battery efficiency, simple protocols
@@ -126,3 +126,4 @@ iperf3 -c 192.168.1.5 -p 8889 -u -l 1024 -f M
 
 ## 📬 Contact
 Feel free to contact via [Twitter](https://twitter.com/vic4key) / [Gmail](mailto:vic4key@gmail.com) / [Blog](https://blog.vic.onl/) / [Website](https://vic.onl/)
+
